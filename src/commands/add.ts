@@ -1,24 +1,25 @@
-import { getIconsFromFile, redicons, saveIconsToFile } from "./common";
+import { getIconsFromFile, outputJsonPath, redicons, saveIconsToFile } from "./common";
 
 
 
 export function addCommand (rest: string[]) {
 	const existingIcons = getIconsFromFile();
+	console.log(`Found ${existingIcons.length} icons in ${outputJsonPath}!`);
 
 	const iconsToBeAdded = [];
 	for (const iconName of rest) {
 		const existingIcon = existingIcons.find(icon => icon.name === iconName);
 		if (existingIcon) {
-			console.log(`Icon '${iconName}' already exists in your redicons.json!`);
+			console.log(`\tIcon '${iconName}' already exists in your redicons.json!`);
 			continue;
 		}
 
 		const icon = redicons.find(icon => icon.name === iconName);
 		if (icon) {
-			console.log(`Found '${iconName}' icon!`);
+			console.log(`\tFound '${iconName}' icon!`);
 			iconsToBeAdded.push(icon);
 		} else {
-			console.log(`Not found '${iconName}' icon!`);
+			console.log(`\tNot found '${iconName}' icon!`);
 		}
 	}
 
