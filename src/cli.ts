@@ -13,15 +13,15 @@ function main () {
 	console.log(`Now redicons-cli is using TypeScript.`);
 
 	switch (command) {
-		case "add": case "a": commands.helpCommand(rest); break;
-		case "remove": case "r": commands.helpCommand(rest); break;
+		case "add": case "a": commands.addCommand(rest); break;
+		case "remove": case "r": commands.removeCommand(rest); break;
 
-		case "list": case "l": commands.helpCommand(rest); break;
-		case "search": case "s": commands.helpCommand(rest); break;
+		case "list": case "l": commands.listCommand(rest); break;
+		case "search": case "s": commands.searchCommand(rest); break;
 
 		case "help": case "h": commands.helpCommand(rest); break;
-		case "version": case "v": commands.helpCommand(rest); break;
-		default: commands.helpCommand(rest); break;
+		case "version": case "v": commands.versionCommand(rest); break;
+		default: commands.versionCommand(rest); break;
 	}
 }
 

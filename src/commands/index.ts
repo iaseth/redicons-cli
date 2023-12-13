@@ -1,10 +1,19 @@
+import { addCommand } from "./add";
+import { helpCommand } from "./help";
+import { listCommand } from "./list";
+import { removeCommand } from "./remove";
+import { searchCommand } from "./search";
+import { versionCommand } from "./version";
 
 
-
-function helpCommand (rest: string[]) {
-	console.log(`This is redicons-cli "help" command!`);
-}
 
 export const commands = {
-	helpCommand
+	addCommand,
+	removeCommand,
+
+	listCommand,
+	searchCommand,
+
+	helpCommand,
+	versionCommand,
 };
