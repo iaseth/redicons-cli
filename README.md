@@ -16,22 +16,22 @@ Now, you can run the `redicons` command in your Terminal.
 
 
 ## Usage
-Add an icon:
+Add an icon with the `add` command:
 ```
 redicons add bug
 ```
 
-Remove an icon:
+Remove an icon with the `remove` command:
 ```
 redicons remove bug
 ```
 
-List all added icons:
+List all added icons with the `list` command:
 ```
 redicons list
 ```
 
-Search for an icon:
+Search for an icon with the `search` command:
 ```
 redicons search arrow
 ```
@@ -45,6 +45,21 @@ Show version:
 ```
 redicons version
 ```
+
+
+## Shortcuts
+Every redicon command has a shortcut, usually the first character of the command name.
+
+Some command also have a special character shortcut. All of these are listed in the table below.
+
+| Command | Shortcut | Special Shortcut |
+| ------- | -------- | ---------------- |
+| add     | a        | +                |
+| remove  | r        | -                |
+| list    | l        | =                |
+| search  | s        | ?                |
+| help    | h        |                  |
+| version | v        |                  |
 
 
 ## Dependencies

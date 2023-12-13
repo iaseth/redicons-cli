@@ -1,7 +1,7 @@
 {
   "name": "redicons-cli",
-  "version": "0.7.0",
-  "description": "A CLI for redicons.",
+  "version": "1.0.0",
+  "description": "A CLI App to manage RedIcons in your projects.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {},
