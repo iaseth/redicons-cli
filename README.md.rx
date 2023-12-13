@@ -1,7 +1,7 @@
 
 # RedIcons
 {{ "redicons-cli" | NpmLink }} allows you to easily manage
-[RedIcons](https://redicons.redpapr.com/) in your React projects.
+{{ gh.link("iaseth/redicons", "RedIcons") }} in your React projects.
 
 I am using {{ gh.link("iaseth/readmix", "readmix") }} for generating this README.
 You can view the source file [here](https://github.com/iaseth/timenames/blob/master/README.md.rx).
@@ -20,11 +20,17 @@ Add an icon:
 Remove an icon:
 => redicons remove bug
 
-Search for an icon:
-=> redicons search bug
-
 List all added icons:
-=> redicons search bug
+=> redicons list
+
+Search for an icon:
+=> redicons search arrow
+
+Show help:
+=> redicons help
+
+Show version:
+=> redicons version
 
 
 ## Dependencies

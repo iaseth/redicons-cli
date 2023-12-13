@@ -1,7 +1,7 @@
 
 # RedIcons
 [`redicons-cli`](https://www.npmjs.com/package/redicons-cli) allows you to easily manage
-[RedIcons](https://redicons.redpapr.com/) in your React projects.
+[`RedIcons`](https://github.com/iaseth/redicons) in your React projects.
 
 I am using [`readmix`](https://github.com/iaseth/readmix) for generating this README.
 You can view the source file [here](https://github.com/iaseth/timenames/blob/master/README.md.rx).
@@ -26,14 +26,24 @@ Remove an icon:
 redicons remove bug
 ```
 
-Search for an icon:
-```
-redicons search bug
-```
-
 List all added icons:
 ```
-redicons search bug
+redicons list
+```
+
+Search for an icon:
+```
+redicons search arrow
+```
+
+Show help:
+```
+redicons help
+```
+
+Show version:
+```
+redicons version
 ```
 
 
