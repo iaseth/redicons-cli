@@ -13,8 +13,8 @@ function main () {
 	console.log(`Now redicons-cli is using TypeScript.`);
 
 	switch (command) {
-		case "add": case "a": commands.addCommand(rest); break;
-		case "remove": case "r": commands.removeCommand(rest); break;
+		case "add": case "a": case "+": commands.addCommand(rest); break;
+		case "remove": case "r": case "-": commands.removeCommand(rest); break;
 
 		case "list": case "l": commands.listCommand(rest); break;
 		case "search": case "s": commands.searchCommand(rest); break;
