@@ -1,16 +1,11 @@
 #!/usr/bin/env node
 import { commands } from "./commands";
-import rediconsJson from "./redicons.json";
-const icons = rediconsJson.icons;
 
 
 
 function main () {
 	const args = process.argv.slice(2);
 	const [command, ...rest] = args;
-
-	console.log(`There are ${icons.length} icons ready for use.`);
-	console.log(`Now redicons-cli is using TypeScript.`);
 
 	switch (command) {
 		case "add": case "a": case "+": commands.addCommand(rest); break;
