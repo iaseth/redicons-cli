@@ -1,15 +1,12 @@
 {
   "name": "redicons-cli",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "A CLI for redicons.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "scripts": {
-    "test": "jest",
-    "testwatch": "jest --watchAll --verbose"
-  },
+  "scripts": {},
   "bin": {
-    "redicons": "./cli.js"
+    "redicons": "./dist/cli.js"
   },
   "keywords": [
     "redicons",
@@ -19,5 +16,8 @@
   "author": "iaseth",
   "homepage": "https://github.com/iaseth/redicons-cli",
   "repository": "iaseth/redicons-cli",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.4"
+  }
 }
