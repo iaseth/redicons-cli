@@ -4,7 +4,8 @@
 export interface PathData {
 	d: string,
 	fillRule?: string,
-	fillOpacity?: string
+	fillOpacity?: string,
+	opacity?: string
 }
 
 export interface SymbolData {
@@ -16,7 +17,17 @@ export interface SymbolData {
 export interface CircleData {
 	cx: string,
 	cy: string,
-	r: string
+	r: string,
+	fillRule?: string,
+	opacity?: string
+}
+
+export interface EllipseData {
+	cx: string,
+	cy: string,
+	rx: string,
+	ry: string,
+	opacity?: string
 }
 
 export interface RectData {
@@ -34,5 +45,8 @@ export interface RedIconData {
 	paths?: PathData[],
 	symbols?: SymbolData[],
 	circles?: CircleData[],
+	ellipses?: EllipseData[],
 	rects?: RectData[]
 }
+
+export const redicons: RedIconData[] = [];
