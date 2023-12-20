@@ -20,6 +20,11 @@ export function getIconsFromFile (): RedIconData[] {
 
 export function saveIconsToFile (icons: RedIconData[]) {
 	try {
+		icons.sort((a, b) => {
+			if (a.name < b.name) return -1;
+			else if (a.name > b.name) return 1;
+			else return 0;
+		});
 		const jo = {icons};
 		const jsonString = JSON.stringify(jo, null, "\t");
 		fs.writeFileSync(outputJsonPath, jsonString, "utf-8");
