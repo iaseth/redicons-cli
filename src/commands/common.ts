@@ -21,7 +21,7 @@ export function getIconsFromFile (): RedIconData[] {
 export function saveIconsToFile (icons: RedIconData[]) {
 	try {
 		const jo = {icons};
-		const jsonString = JSON.stringify(jo, null, 0);
+		const jsonString = JSON.stringify(jo, null, "\t");
 		fs.writeFileSync(outputJsonPath, jsonString, "utf-8");
 		console.log(`Saved ${icons.length} icons to ${outputJsonPath}.`);
 	} catch (error) {
