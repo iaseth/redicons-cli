@@ -1,9 +1,9 @@
-import { redicons } from "./common";
+import { redIconsDB } from "./common";
 
 
 
 export function searchCommand (rest: string[]) {
-	const resultIcons = redicons.filter(icon => {
+	const resultIcons = redIconsDB.filter(icon => {
 		for (const arg of rest) {
 			if (icon.name.includes(arg)) {
 				return true;

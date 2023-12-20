@@ -1,4 +1,4 @@
-import { getIconsFromFile, outputJsonPath, redicons, saveIconsToFile } from "./common";
+import { getIconsFromFile, outputJsonPath, redIconsDB, saveIconsToFile } from "./common";
 
 
 
@@ -14,7 +14,7 @@ export function addCommand (rest: string[]) {
 			continue;
 		}
 
-		const icon = redicons.find(icon => icon.name === iconName);
+		const icon = redIconsDB.find(icon => icon.name === iconName);
 		if (icon) {
 			console.log(`\tFound '${iconName}' icon!`);
 			iconsToBeAdded.push(icon);

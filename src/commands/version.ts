@@ -1,7 +1,7 @@
-import { redicons } from "./common";
+import { redIconsDB } from "./common";
 
 
 
 export function versionCommand (rest: string[]) {
-	console.log(`This is redicons-cli with ${redicons.length} icons!`);
+	console.log(`This is redicons-cli with ${redIconsDB.length} icons!`);
 }

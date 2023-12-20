@@ -4,7 +4,7 @@ import { RedIconData } from "./data";
 
 
 
-export const redicons: RedIconData[] = rediconsJson.icons;
+export const redIconsDB: RedIconData[] = rediconsJson.icons;
 export const outputJsonPath = "redicons.json";
 
 export function getIconsFromFile (): RedIconData[] {

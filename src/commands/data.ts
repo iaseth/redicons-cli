@@ -48,5 +48,3 @@ export interface RedIconData {
 	ellipses?: EllipseData[],
 	rects?: RectData[]
 }
-
-export const redicons: RedIconData[] = [];
