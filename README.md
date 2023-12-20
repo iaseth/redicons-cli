@@ -18,12 +18,17 @@ Now, you can run the `redicons` command in your Terminal.
 ## Usage
 Add an icon with the `add` command:
 ```
-redicons add bug
+redicons add bs-bug
 ```
 
 Remove an icon with the `remove` command:
 ```
-redicons remove bug
+redicons remove bs-bug
+```
+
+Update an existing icon with the `update` command:
+```
+redicons update bs-bug
 ```
 
 List all added icons with the `list` command:
@@ -56,6 +61,7 @@ Some command also have a special character shortcut. All of these are listed in 
 | ------- | -------- | ---------------- |
 | add     | a        | +                |
 | remove  | r        | -                |
+| update  | u        |                  |
 | list    | l        | =                |
 | search  | s        | ?                |
 | help    | h        |                  |

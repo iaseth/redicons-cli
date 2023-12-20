@@ -10,6 +10,7 @@ function main () {
 	switch (command) {
 		case "add": case "a": case "+": commands.addCommand(rest); break;
 		case "remove": case "r": case "-": commands.removeCommand(rest); break;
+		case "update": case "u": commands.updateCommand(rest); break;
 
 		case "list": case "l": case "=": commands.listCommand(rest); break;
 		case "search": case "s": case "?": commands.searchCommand(rest); break;
